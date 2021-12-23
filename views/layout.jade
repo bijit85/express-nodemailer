@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='')
+    meta(name='author' content='')
+    title=title
+    // Favicon
+    link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+    // Core theme CSS (includes Bootstrap)
+    link(href='/stylesheets/bootstrap.css' rel='stylesheet')
+    link(href='/stylesheets/style.css' rel='stylesheet')
+    style.
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&family=Ubuntu:wght@300&display=swap');
+
+    body
+        //Responsive navbar
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+            .container
+                a.navbar-brand(href='#') Express Project
+                button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+                        lin.nav-item(class=(title === 'Home' ? 'active' : ''))
+                            a.nav-link(href='/') Home
+                        li.nav-item(class=(title === 'About' ? 'active' : ''))
+                            a.nav-link(href='/about') About
+                        li.nav-item(class=(title === 'Contact' ? 'active' : ''))
+                            a.nav-link(href='/contact') Contact
+
+        // Page content
+        .container
+
+        block content
+        footer
+            p &copy; 2021, All rights reserved
+     // JQuery
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    // Bootstrap core JS
+    script(src='/javascripts/bootstrap.js')

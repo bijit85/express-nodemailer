@@ -1,0 +1,32 @@
+body {
+  padding-top: 50px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+
+p {
+  align-content: space-evenly;
+}
+footer {
+  background: lightgrey;
+  height: 40px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  /*overflow: auto;*/
+}
+.jumbotron {
+  background: url("../images/pexels-fwstudio-129731.jpg") no-repeat;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/*  background-color: lightgrey;*/
+/*}*/
